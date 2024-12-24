@@ -32,7 +32,7 @@ function LoginSignup() {
       }
   
       try {
-        await axios.post('http://localhost:5000/api/auth/register', { username, password});
+        await axios.post('http://localhost:5000/api/auth/register', { username, password });
         setIsLogin(true);
         setError('');
       } catch (error) {

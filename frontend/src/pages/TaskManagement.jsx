@@ -8,7 +8,16 @@ function TaskManagement() {
     
   }
 
+  const handleDeleteTask = (id) => {
+  }
 
+    const handleReadTask = (id) => {
+    
+  }
+
+  const handleUpdateTask = (id) => {
+
+  }
      
 
   return (
@@ -17,16 +26,16 @@ function TaskManagement() {
       <div className="task-container">
         <h1>Task Management</h1>
         <div className='buttons'>
-        <button>
+        <button onClick={handleAddTask}>
           Add Task
         </button>
-        <button>
+        <button onClick={handleDeleteTask}>
           Delete Task
         </button>
-        <button>
+        <button onClick={handleUpdateTask}>
           Update Task
         </button>
-        <button>
+        <button onClick={handleReadTask}>
           Read Task
         </button>
         </div>
